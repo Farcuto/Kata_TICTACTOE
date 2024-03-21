@@ -12,11 +12,12 @@ print("+===+===+===+")
 
 def tictactoe(table):
     counter = 0
-    select_position = 0
-    alter_player = True
+    #select_position = 0
+    #alter_player = True
     
     while(counter < 8):
-        
+       
+        """     
         if (alter_player == True):
             
             select_position = int(input("Selecciona la posicion en la que quieres jugar: "))
@@ -38,7 +39,8 @@ def tictactoe(table):
         print(f"| {table[6]} | {table[7]} | {table[8]} |")
         print("+===+===+===+")
 
-        
+        """
+            
         
         #region Logic_of_player_X
         # principal diagonal X
