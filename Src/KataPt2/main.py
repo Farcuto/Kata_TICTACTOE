@@ -4,23 +4,38 @@ def tictatoe(plays):
     alter_player = True
     player_one = 1
     player_two = 2
-    select_position = 0
     count = 0
 
-    while(select_position < 9):
+    while(count < 8):
     
        
         if (alter_player == True):
+            
             alter_player = False
-            select_position = positions[0]
-            plays[select_position] = "x"
-            select_position = select_position + 1
-        else:
-            alter_player = True
-            plays[select_position] = "o"
-            select_position = select_position + 1
+            
+            if (plays[count] == "x") or (plays[count] == "o"):
+                count = count + 1
+                alter_player = True
+            else:
+                play_of_player_one = int(plays[count])
+                play_of_player_one = play_of_player_one - 1
+                plays[play_of_player_one] = "x"
         
-        print(plays)
+        else:
+        
+            alter_player = True
+            
+        
+            if (plays[count] == "x") or (plays[count] == "o"):
+                count = count + 1
+                alter_player = False
+            else:
+                
+                play_of_player_two = int(plays[count])
+                play_of_player_two = play_of_player_two - 1
+                plays[play_of_player_two] = "o"
+            
+      
         if ((plays[0] == "x") and (plays[4] == "x") and (plays[8] == "x")):
             return player_one
         
@@ -29,9 +44,10 @@ def tictatoe(plays):
         
         count = count + 1 
     
+    print(plays)
     
     return 0
 
-plays = ["2","1","3","5","6","9","4","7","8"]
+plays = [2,1,3,5,6,9,4,7,8]
 
 tictatoe(plays)
