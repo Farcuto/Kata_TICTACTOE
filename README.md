@@ -1,4 +1,4 @@
-# Kata_TICTACTOE
+# Kata TICTACTOE
 ### Code by: Fernando A. Rodriguez
 ---
 
