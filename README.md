@@ -4,7 +4,7 @@
 
 [Live Coding on Youtube](https://www.youtube.com/playlist?list=PLxFn4mrvRfPU6FJ2JYunNMw-Ybpz1Ma6I)
 
-Para correr el programa solo es necesario  escribir `python "nombre del programa"`, solo es necesario instalar [python](https://www.python.org/downloads/) caso de no tenerlo instalado 
+To run the program it is only necessary to write `python "program name"`, it is only necessary to install [python](https://www.python.org/downloads/) if you do not have it installed.
 
 ---
 
